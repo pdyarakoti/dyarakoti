@@ -1,5 +1,0 @@
-//Remove date from old posts in WordPress
-
-<?php $daysold = (current_time('timestamp') - get_the_modified_time('U') - (get_option('gmt_offset')))/(24*60*60); if ($daysold < 180 ) {echo get_the_modified_date(); } ?>
-
-//Removes dates from published/ modified posts older than 180 days in WordPress and shows modified date in newer posts. Change 180 to desired days.
